@@ -1,0 +1,8 @@
+
+<body bgcolor="black" text="lightgreen">
+library(MASS)<br><br>
+dat<-mvrnorm(3000,mu=c(50,50),Sigma=matrix(c(100,80,80,100),2,2))<br><br>
+plot(dat,xlim=c(0,100),ylim=c(0,100),pch=20,<br>xlab="X",ylab="Y",col="lightgreen",main="")<br><br>
+abline(0,1,lty=2,lwd=2,col="pink")<br><br>
+model<-lm(dat[,1]~dat[,2])<br><br>
+summary(model)

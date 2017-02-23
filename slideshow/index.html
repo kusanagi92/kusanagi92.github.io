@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>web-based slideshow</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<font color=cadetblue><strong>授業や研究発表を<br>web-based slideshowでするべき6つの理由</strong><br><br><br></font>
+				</section>
+				
+				<section>
+					<font color=cadetblue><strong>このスライドでいいたいこと</strong></font>
+					<section>
+					</section>
+					<section>
+					web-based slideshowってなあに？
+					</section>
+					<section>
+					web-based slideshowのいいところ
+					</section>
+					<section>
+					Githubでやっていこう！
+					</section>
+				</section>
+				
+				
+				<section>
+				<strong><font color=cadetblue>web-based slideshowってなあに？</strong></font>
+					<section>
+					</section>
+					<section>
+					Webブラウザ上で視聴・提示できるスライドショー<br><br>
+					<ul type=circle>
+					<li>reveal.js（このスライドショー）
+					<li>slidy
+					<li>ioslides
+					<li>Prezi（JavaScriptべース）などなど
+					</ul><br><br>
+					<input type="button" value="reveal.jsの公式サンプル" onClick="window.open('http://lab.hakim.se/reveal-js/#/')">
+					<input type="button" value="slidyの公式サンプル" onClick="window.open('https://www.w3.org/Talks/Tools/Slidy2/#(1)')">
+					</section>
+					
+					<section>
+					これが授業や研究発表に適しています！という話…
+					</section>
+				</section>
+					
+				<section><font color=cadetblue><strong>web-based slideshowのいいところ①</strong></font>
+					<section>
+					</section>
+					<section>プラットフォームを問わない<br><br>
+					<ul type=circle>
+					<li>Microsoft PowerPointなど高価でケッタイなものを使わなくていい
+					<li>昨今，学生や研究者のOSは多様化している
+					<li>大学におけるBYOD環境ではOSだけでなくデバイスも多様化
+					<li>レイアウト崩れなど，ファイルの互換性に関する心配も少ない
+					<li>ネットに置けばどこからでもアクセスできる
+					</ul>
+					</section>
+					
+					<section>視聴・提示環境のみならず…<br><br>
+					<ul type=circle>
+					<li>作成者は自分の好きなエディタなどで作成できる（例えばEmacsやEmacsやEmacsなど）
+					<li>作成者のOSどころか使用する環境も問われない（なんて自由なの）
+					<li>Githubなどを使えばバージョン管理や公開も楽
+					</ul>
+					</section>
+					
+					<section>こんな感じでエディタでシンプルに作成できる<br><br>
+					<img src="001.png">
+					</section>
+				</section>
+				
+				<section><font color=cadetblue><strong>web-based slideshowのいいところ②</strong></font>
+					<section>
+					</section>
+					<section>作成が容易<br><br>
+					<ul type=circle>
+					<li>基本はhtmlやcssの知識があれば誰でも書ける
+					<li>（流行りの）markdown記法を大概サポートしているので簡単
+					<li>Microsoft PowerPointよりも圧倒的な作業時間の短縮
+					<li>テンプレートの使い回しが容易
+					</ul>
+					</section>
+					
+					<section>容易なだけでなくて…<br><br>
+					<ul type=circle>
+					<li>エディタで作成できるためケッタイなGUIによるストレスが軽減
+					<li>ソースコード主体であるため他者との共有が容易（Githubなど）
+					<li>作成時間短縮による総合的な業務改善の見込み
+					</ul>
+					</section>
+				</section>
+				
+				<section><font color=cadetblue><strong>web-based slideshowのいいところ③</strong></font>
+					<section>
+					</section>
+					<section>スライドが構造化されている<br><br>
+					<ul type=circle>
+					<li>縦と横の両方向に任意に動ける
+					<li>授業・発表などの構造自体がきれいになる
+					<li>見る側もわかりやすい（e.g., 教材の構造性）
+					</ul>
+					</section>
+
+					<section>キーボード操作が可能<br><br>
+					<ul type=circle>
+					<li>↑　↓　→　←　で移動
+					<li>fキーでフルスクリーン表示
+					<li>Escキーで全体の構造を表示・選択できる
+					<li>bキーでブラックアウト　などなど
+					</ul>
+					</section>					
+				</section>
+				
+				<section><font color=cadetblue><strong>web-based slideshowのいいところ④</strong></font>
+					<section>
+					</section>
+					<section>基本はhtmlなのでさまざま拡張が可能<br><br>
+					<ul type=circle>
+					<li>音声ファイルの再生
+					<li>リンク・ボタン・テキストボックスなどの配置
+					<li>さまざまなウェブサービスの埋め込み
+					<li>htmlがインタラクティブな程度にはインタラクティブ
+					<li>WBTなどの教材作成も可能
+					</ul>
+					</section>
+					
+					<section>
+					音声ファイルの埋め込み<br><br>
+				<object type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_mini.swf" width="200" height="20">
+				<param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_mini.swf" />
+				<param name="bgcolor" value="#000000" />
+				<param name="FlashVars" value="mp3=http%3A//kusanagi92.github.io/reveal.js-3.4.1/001.mp3" />
+https://kusanagi92.github.io/reveal.js-3.4.1/
+
+				</object>
+				</section>	
+				
+				<section>
+					ボタンの埋め込み<br>
+					<input type="button" value="草薙のHP" onClick="window.open('https://sites.google.com/site/kusanagikuni/')"><br>
+					<input type="button" value="草薙の研究ログ" onClick="window.open('http://kusanagi.hatenablog.jp/')"><br><br>
+					
+					<form name="js">
+					名前を入れて「こんにちわ！」を押して！<br>
+					<input type="text" name="txtb" value=""><br>
+					<input type="button" value="こんにちわ！" onclick="tbox1()"><br>
+					<input type="button" value="一回消す" onclick="clr()"><br>
+					</form>
+					<script>
+					function tbox1(){ var str1=document.js.txtb.value;alert("あなたは"+str1+"さん！");}
+					function clr(){
+					document.js.txtb.value="";
+					}
+					</script>
+				</section>
+					
+				<section>
+					Youtube動画の埋め込みなど<br>
+					<iframe width="854" height="480" src="https://www.youtube.com/embed/okLNJkRq5Hk" frameborder="0" allowfullscreen></iframe>
+				</section>
+			</section>
+			
+			<section><font color=cadetblue><strong>web-based slideshowのいいところ⑤</strong></font>
+				<section>
+				</section>
+				
+				<section>ブラウザで完結するシームレスなプレゼン<br><br>
+				<ul type=circle>
+				<li>スライドを戻って示すときにもたもた…
+				<li>音声や動画を見せる度にもたもた…
+				<li>webページを見せるためにもたもた…
+				<li>コードを見せるためにもたもた…
+				<li>データや材料を見せるのにもたもた…
+				</ul>
+				</section>
+				
+				<section>
+				いやぁ，なんていうかもう授業や学会で「もたもた…」はなくていいよ
+				</section>
+				
+				<section>
+				たとえばコードは埋め込んでしまっていい
+				<p><object data="001.html" type="text/html" width="500" height="300">
+				<a href="example.html">
+				</object></p>
+				</section>
+				
+				<section>
+				データも埋め込んでしまっても
+				<p><object data="002.html" type="text/html" width="500" height="300">
+				<a href="example.html">
+				</object></p>
+				<br>
+				</section>
+				
+				<section>
+				たとえば「仕様や手続き」も動画でいいかも<br>
+				<iframe width="854" height="480" src="https://www.youtube.com/embed/QhLsW9vHXsk" frameborder="0" allowfullscreen></iframe>				</section>
+				</section>
+			</section>
+			
+			<section><font color=cadetblue><strong>web-based slideshowのいいところ⑥</strong></font>
+				<section>
+				</section>
+				
+				<section><strong>なんといってもかっこいい</strong><br><br>
+				<ul type=circle>
+				<li>テンプレートが現代風
+				<li>玄人っぽい錯覚を与えられる
+				<li>パワポとはデザインが違いますもの
+				</ul>
+				</section>
+				
+				<section>なんといっても
+				</section>
+				
+				<section><strong>かっこいい///</strong>
+				</section>
+			</section>
+				
+			<section><font color=cadetblue><strong>Githubでやっていこう！</strong></font>
+				<section>
+				</section>
+				
+				<section><strong>Github</strong><br><br>
+				<ul type=circle>
+				<li>共同開発におけるバージョン管理ツール
+				<li>とてもいい
+				<li>このようにプレゼンを公開することもできる
+				</ul>
+				</section>
+			</section>
+			
+			<section><strong>Microsoft PowerPointなどと比べ…</strong>
+			</section>
+			
+			<section><strong>どっちが楽ですか？</strong>
+			</section>
+			
+			<section><strong>ありがとうございました</strong>
+			</section>
+			
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
