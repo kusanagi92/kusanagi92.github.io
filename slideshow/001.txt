@@ -1,0 +1,6 @@
+library(MASS)
+
+dat<-mvrnorm(3000,mu=c(50,50),Sigma=matrix(c(100,80,80,100),2,2))
+plot(dat,xlim=c(0,100),ylim=c(0,100),pch=20,
+	xlab="X",ylab="Y",col="lightgreen",main="")
+abline(0,1,lty=2,lwd=2,col="pink")
