@@ -1,5 +1,11 @@
 <!doctype html>
 <html>
+	<script src="/audiojs/audio.mon"></script>
+<script>
+audiojs.events.ready(function() {
+var as = audiojs.createAll();
+});
+</script>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -148,7 +154,7 @@
 					
 					<section>
 					音声ファイルの埋め込み<br><br>
-					<embed src="001.mp3" width="200" height="300">
+					<audio src="001.mp3" preload="auto"></audio>
 					</section>	
 				
 				<section>
